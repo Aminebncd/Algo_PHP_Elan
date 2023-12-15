@@ -24,10 +24,8 @@ echo "Age : $age<br>";
 echo " Sexe : $sexe<br>";
 
 if (($sexe == "F" && $age >=18 && $age <= 35 ) || ($sexe == "H" && $age < 20)) {
-   
     echo "La personne est imposable.<br>";
 } else {
-    
     echo "La personne est non-imposable.<br>";
 }
 
