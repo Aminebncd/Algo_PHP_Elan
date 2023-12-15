@@ -36,8 +36,11 @@ function disBonjour() {
             case "esp": 
                 echo "Hola " . ucfirst($prenom) ." <br>"; 
                 break;
-            default: 
+            case "fra": 
                 echo "Salut " . ucfirst($prenom) ." <br>";
+                break;
+            default: 
+                echo "langue non prise en charge";
         }
     }
 }

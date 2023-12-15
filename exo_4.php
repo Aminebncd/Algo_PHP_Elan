@@ -13,12 +13,33 @@
 
 
 
-$palindrome = ['e', 'n', 'g', 'a', 'g', 'e', 'l', 'e', 'j', 'e', 'u', 'q', 'u', 'e', 'j', 'e', 'l', 'e', 'g', 'a', 'g', 'n', 'e'];
+// $palindrome = ['e', 'n', 'g', 'a', 'g', 'e', 'l', 'e', 'j', 'e', 'u', 'q', 'u', 'e', 'j', 'e', 'l', 'e', 'g', 'a', 'g', 'n', 'e'];
 
-$reversed = array_reverse($palindrome);
+// $reversed = array_reverse($palindrome);
+
+// if ($palindrome === $reversed) {
+//     echo "c'est un palindrome !<br><br>";
+// } else {
+//     echo "pas un palindrome...<br><br>";
+// } 
+
+
+// Autre methode :
+
+
+
+
+$palindrome = "Engage le jeu que je le gagne";
+
+$reversed = $palindrome;
+mb_strtolower($reversed);
+str_replace(' ', '', $reversed);
+strrev($reversed);
 
 if ($palindrome === $reversed) {
-    echo "c'est un palindrome !<br><br>";
-} else {
-    echo "pas un palindrome...<br><br>";
-} 
+         echo "c'est un palindrome !<br><br>";
+     } else {
+         echo "pas un palindrome...<br><br>";
+     } 
+
+
